@@ -171,6 +171,7 @@ const createCupcake = () => {
                     };
                     cupcakes.push(newCupcake);
                     console.log(cupcakes);
+                    alert("New Cupcake has been created: " + newCupcake.cupcake_name);
                     restoreControls();
                 });
             });
@@ -377,6 +378,7 @@ const deleteCupcake = () => {
     displayCupcakeList(function(cupcakeIndex) {
         console.log(cupcakeIndex);
         const removedCupcake = cupcakes.splice(cupcakeIndex, 1);
+        alert("Cupcake has been removed: " + removedCupcake[0].cupcake_name);
         console.log(removedCupcake);
         restoreControls();
     });
