@@ -1,0 +1,199 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ffb6c1;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px #ff69b4;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+#intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fffaf0;
+    border-bottom: 3px dotted #ffb6c1;
+}
+
+#intro h2 {
+    font-size: 2.2rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1.2rem;
+}
+
+#controls {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#controls select,
+#controls input[type="text"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+#controls label {
+    font-weight: bold;
+    color: #ff69b4;
+}
+
+#flavorFilter {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff69b4;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 5px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#deleteCupcake {
+    background-color: #ff4f6a;
+}
+
+#deleteCupcake:hover {
+    box-shadow: 0 4px 12px rgba(255, 0, 50, 0.4);
+}
+
+#cupcakeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cupcake-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.cupcake-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+
+.price {
+    font-weight: bold;
+    color: #ff69b4;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.desc {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.ingredientsBtn {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ingredientsBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.ingredientBox {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #f4c2c2;
+    border-radius: 10px;
+    background-color: #fffaf0;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#ingredientDisplay ul {
+    list-style: circle;
+    padding-left: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#controls h4,
+#controls p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+#controls ul li input[type="text"] {
+    width: 80%;
+    padding: 6px;
+}
+
+#aboutSection {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #ffe4e1, #fff0f5);
+    text-align: center;
+    border-top: 3px dotted #ffb6c1;
+}
+
+#aboutSection h2 {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 15px;
+}
+
+#aboutSection p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb6c1;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
