@@ -1,4 +1,17 @@
+let cupcakes = [];
 let originalControlsHTML;
+
+const loadCupcakes = () => {
+    $.ajax({
+        url: "https://bradlerl.github.io/bradlerl_21500_CupcakeCutiesInfo/cupcake_info.json",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            cupcakes = data;
+            console.log("Cupcakes loaded:", cupcakes);
+        }
+    });
+};
 
 // This function basically "builds" the list of ingredients for the cupcake cards and combines it all into one 'html' variable so that when the Show Ingredients function is called via the button, it doesn't have to do all this within the button event
 const ingredientsList = (cupcake) => {
@@ -388,4 +401,7 @@ const showInformation = () => {
     $("#deleteCupcake").on("click", deleteCupcake);
 };
 
-$(document).ready(showInformation);
+$(document).ready(function () {
+    showInformation();
+    loadCupcakes();
+});
